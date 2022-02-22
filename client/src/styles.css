@@ -1,0 +1,83 @@
+/*input Number oxi panokato*/
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/*Header*/
+.imgLogo{
+  width: 2.5rem;
+  height: 2.5rem;
+  
+}
+.imgGoProf{
+  width: 2.5rem;
+  height: 2.5rem;
+}
+/*Header end*/
+
+/*Profile images*/
+.imgProfile{
+  width: 150px;
+  height: 150px;
+}
+
+/*------------*/
+.notificationNumber{ 
+  margin-right: 34px;
+  margin-top: 10px;
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  border-radius: 50%;
+  color: aliceblue;
+  position: absolute;
+  top: -6px;
+  right: -24px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Dropdown */
+.centerItem{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*Offcanvas--- Sidebar*/
+:root {
+  --offcanvas-width: 250px;
+  --topNavbarHeight: 76px;
+}
+
+.sidebar-nav{
+  width: var(--offcanvas-width);
+}
+
+@media (min-width:992px) {
+  body{
+    overflow: auto !important;
+  }
+  main{
+    margin-left: var(--offcanvas-width);
+  }
+  .offcanvas-backdrop::before {
+    display: none;
+  }
+  .sidebar-nav{
+    transform: none;
+    visibility: visible !important;
+    top: var(--topNavbarHeight);
+    height: calc(100% - var(--topNavbarHeight));
+  }
+}
